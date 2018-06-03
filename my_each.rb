@@ -1,10 +1,9 @@
-words = ['hi', 'hello', 'bye', 'goodbye']
 
-def my_each (words)
-   i = 0 
-   while i<words.length do 
-   yield words[i] {|x| puts x}
-   i++
-   end 
+def my_each(collection)
+  i = 0
+  while i < collection.length
+    yield(collection[i])
+    i = i + 1
+  end
+  collection
 end
-
